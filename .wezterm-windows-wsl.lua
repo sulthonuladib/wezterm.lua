@@ -1,8 +1,7 @@
 local wezterm = require("wezterm")
 local action = wezterm.action
 
-local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
-
+local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
 local config = {}
 
 if wezterm.config_builder then
@@ -47,7 +46,7 @@ end
 for i = 1, 8 do
 	table.insert(config.keys, {
 		key = tostring(i),
-		mods = "ALT",
+		mods = "CTRL",
 		action = action.ActivateTab(i - 1),
 	})
 end
