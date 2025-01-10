@@ -17,6 +17,8 @@ config.window_padding = {
 	bottom = 0,
 }
 
+-- config.window_background_opacity = 0.95
+
 config.tab_bar_at_bottom = true
 -- config.use_fancy_tab_bar = false
 config.use_fancy_tab_bar = true
@@ -33,7 +35,6 @@ config.window_frame.font = wezterm.font({
 	weight = "Bold",
 })
 config.window_frame.font_size = 11
--- config.window_frame.font_size = 11
 
 config.font = wezterm.font({
 	family = "Berkeley Mono",
@@ -59,6 +60,7 @@ for i = 1, 8 do
 		action = action.ActivateTab(i - 1),
 	})
 end
+
 -- config.wsl_domains = {
 -- 	{
 -- 		name = "WSL:Ubuntu-24.04",
