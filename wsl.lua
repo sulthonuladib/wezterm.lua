@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local action = wezterm.action
 
-local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
+-- local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
 
 local config = {}
 
@@ -19,22 +19,23 @@ config.window_padding = {
 
 -- config.window_background_opacity = 0.95
 
+config.max_fps = 165;
 config.tab_bar_at_bottom = true
 -- config.use_fancy_tab_bar = false
 config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
 -- config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
 config.tab_max_width = 64
 
--- config.color_scheme = "Tomorrow Night Eighties"
-config.colors = theme.colors()
-config.window_frame = theme.window_frame({})
-config.window_frame.font = wezterm.font({
-	family = "Berkeley Mono",
-	weight = "Bold",
-})
-config.window_frame.font_size = 11
+config.color_scheme = "Tomorrow Night Eighties"
+-- config.colors = theme.colors()
+-- config.window_frame = theme.window_frame({})
+-- config.window_frame.font = wezterm.font({
+-- 	family = "Berkeley Mono",
+-- 	weight = "Bold",
+-- })
+-- config.window_frame.font_size = 11
 
 config.font = wezterm.font({
 	family = "Berkeley Mono",
